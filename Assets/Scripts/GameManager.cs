@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public Text OutputText;
     public InputField textfield;
     public string nama;
+
     private void Awake() // fungsi singleton agar GameObject gamemanager ga hancur ketika ganti scene.
     {
         LoadInformation();
@@ -30,16 +31,29 @@ public class GameManager : MonoBehaviour
     {
         if (nama != "")
         {
-            OutputText.text = "Welcome Back, " + nama + "!";
+            LiveText();
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-
+/*        if(OutputText.text != "Welcome Back, Champ!")
+        {
+            Debug.Log("its in!");
+            //ABSTRACTIOn
+            LiveText();
+        }
+        else
+        {
+            Debug.Log("its not merging rick!");
+        }*/
     }
-
+    //ABSTRACTION
+    private void LiveText()
+    {
+        OutputText.text = "Welcome Back, " + nama + "!";
+    }
     public void OpenMainScene()
     {
         if(textfield.text != "")

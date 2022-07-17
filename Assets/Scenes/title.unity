@@ -1328,8 +1328,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed32a967d9555494c96442359a4f583f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OutputText: {fileID: 0}
-  textfield: {fileID: 410382587}
+  OutputText: {fileID: 35780699}
+  textfield: {fileID: 2137369900}
   nama: 
 --- !u!1 &2137369898
 GameObject:
